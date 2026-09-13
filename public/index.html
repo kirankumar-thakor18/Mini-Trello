@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini-Trello</title>
+  <link rel="stylesheet" href="css/styles.css?v=5" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <span class="header__logo">◈</span>
+      <h1 class="header__title">Mini-Trello</h1>
+    </div>
+    <div class="header__actions">
+      <button id="theme-toggle" class="btn theme-toggle" title="Toggle dark mode">🌙</button>
+      <button id="open-create-modal" class="btn btn--primary">
+        <span class="btn__icon">+</span> Create New Task
+      </button>
+    </div>
+  </header>
+
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill">0%</div>
+  </div>
+
+  <div class="toolbar">
+    <input
+      type="text"
+      id="search-input"
+      class="toolbar__search"
+      placeholder="🔍 Search tasks..."
+      autocomplete="off"
+    />
+    <select id="filter-status" class="toolbar__filter" aria-label="Filter by status">
+      <option value="all">All statuses</option>
+      <option value="todo">To Do</option>
+      <option value="in_progress">In Progress</option>
+      <option value="done">Done</option>
+    </select>
+  </div>
+
+  <div class="stats" id="stats">
+    <div class="stats__item stats__item--total">
+      <span class="stats__label">📋 Total</span>
+      <span class="stats__value" id="stat-total">0</span>
+    </div>
+    <div class="stats__item stats__item--todo">
+      <span class="stats__label">🔴 To Do</span>
+      <span class="stats__value" id="stat-todo">0</span>
+    </div>
+    <div class="stats__item stats__item--inprogress">
+      <span class="stats__label">🟡 In Progress</span>
+      <span class="stats__value" id="stat-inprogress">0</span>
+    </div>
+    <div class="stats__item stats__item--done">
+      <span class="stats__label">🟢 Done</span>
+      <span class="stats__value" id="stat-done">0</span>
+    </div>
+    <div class="stats__item stats__item--overdue">
+      <span class="stats__label">⏰ Overdue</span>
+      <span class="stats__value" id="stat-overdue">0</span>
+    </div>
+  </div>
+
+  <main class="board" id="board">
+    <section class="column" data-status="todo">
+      <header class="column__header column__header--todo">
+        <h2 class="column__title">To Do</h2>
+        <span class="column__count" id="count-todo">0</span>
+      </header>
+      <div class="column__cards" id="col-todo"></div>
+    </section>
+    <section class="column" data-status="in_progress">
+      <header class="column__header column__header--in-progress">
+        <h2 class="column__title">In Progress</h2>
+        <span class="column__count" id="count-in_progress">0</span>
+      </header>
+      <div class="column__cards" id="col-in_progress"></div>
+    </section>
+    <section class="column" data-status="done">
+      <header class="column__header column__header--done">
+        <h2 class="column__title">Done</h2>
+        <span class="column__count" id="count-done">0</span>
+      </header>
+      <div class="column__cards" id="col-done"></div>
+    </section>
+  </main>
+
+  <div class="conn-banner" id="conn-banner" hidden>
+    <span class="conn-banner__msg">⚠️ Server not reachable. Tasks will not be saved unless the server is running.</span>
+    <span class="conn-banner__hint">Run <code>npm start</code> inside the Mini-Trello folder, then open
+      <b>http://localhost:3000</b>. Do not double-click index.html.</span>
+    <button class="btn btn--sm btn--ghost conn-banner__btn" id="conn-retry">Retry</button>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay" hidden>
+    <div class="modal">
+      <h2 class="modal__title" id="modal-title">Create New Task</h2>
+      <form id="task-form">
+        <label class="modal__label" for="task-title">Title *</label>
+        <input
+          type="text"
+          id="task-title"
+          class="modal__input"
+          placeholder="Task title"
+          required
+          maxlength="120"
+        />
+        <label class="modal__label" for="task-description">Description</label>
+        <textarea
+          id="task-description"
+          class="modal__textarea"
+          placeholder="Describe the task..."
+          rows="4"
+          maxlength="500"
+        ></textarea>
+        <div class="modal__row">
+          <div class="modal__field">
+            <label class="modal__label" for="task-priority">Priority</label>
+            <select id="task-priority" class="modal__input">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div class="modal__field">
+            <label class="modal__label" for="task-due-date">Due date</label>
+            <input type="date" id="task-due-date" class="modal__input" />
+          </div>
+        </div>
+        <p class="modal__error" id="modal-error" hidden></p>
+        <div class="modal__actions">
+          <button type="button" class="btn btn--ghost" id="cancel-create">Cancel</button>
+          <button type="submit" class="btn btn--primary" id="submit-btn">Add Task</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="js/app.js?v=5"></script>
+</body>
+</html>

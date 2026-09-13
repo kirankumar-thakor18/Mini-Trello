@@ -1,0 +1,25 @@
+{
+  "name": "mini-trello",
+  "version": "1.0.0",
+  "description": "A simple single-page Kanban board to create tasks and move them between To Do, In Progress, and Done columns.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "keywords": [
+    "kanban",
+    "trello",
+    "express",
+    "mongodb"
+  ],
+  "author": "7IT Students",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^7.6.0"
+  }
+}
