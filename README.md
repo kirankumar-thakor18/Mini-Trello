@@ -5,6 +5,12 @@ Create tasks, drag them across **To Do → In Progress → Done**, and keep ever
 
 Built as a live `Full-Stack Mini Project` with a real REST API and a cloud database.
 
+## 🚀 Live Demo
+
+👉 **[mini-trello-fagf.onrender.com](https://mini-trello-fagf.onrender.com)**
+
+> The app is deployed live on Render — open the link and try it right now!
+
 ---
 
 ## 🎯 At a Glance
@@ -165,6 +171,8 @@ The project is designed to deploy easily on a cloud platform like **[Render](htt
 5. Deploy — Render builds and starts the app automatically.
 
 The included `render.yaml` blueprint makes this a one-click setup.
+
+**▶️ The project is already live at:** https://mini-trello-fagf.onrender.com
 
 ---
 
