@@ -7,9 +7,16 @@ try {
   // .env is optional; fall back to process env
 }
 
-const MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://localhost:27017';
-const DB_NAME = process.env.MONGODB_DB || 'mini-trello';
+const MONGODB_URI = process.env.MONGODB_URI;
+const DB_NAME = process.env.MONGODB_DB || 'Mini-Trello';
+
+if (!MONGODB_URI) {
+  console.error(
+    'MONGODB_URI is not set. Create a .env file (see README) for local use, ' +
+      'or add MONGODB_URI to the Render dashboard environment variables.'
+  );
+  process.exit(1);
+}
 
 let client;
 let db;

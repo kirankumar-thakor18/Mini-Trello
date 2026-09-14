@@ -63,7 +63,7 @@ async function api(url, options) {
   }
   if (!res.ok) {
     const data = await res.json().catch(() => ({}));
-    throw new Error(data.error || 'Request failed');
+    throw new Error(data.details || data.error || 'Request failed');
   }
   return res.status === 204 ? null : res.json();
 }

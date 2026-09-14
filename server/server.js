@@ -37,7 +37,7 @@ const collection = () => getDB().collection('tasks');
 const asyncHandler = (fn) => (req, res, next) =>
   Promise.resolve(fn(req, res, next)).catch((err) => {
     console.error(err);
-    res.status(500).json({ error: 'Server error' });
+    res.status(500).json({ error: 'Server error', details: err && err.message });
   });
 
 app.get(
@@ -164,5 +164,9 @@ connectDB()
   })
   .catch((err) => {
     console.error('Failed to connect to MongoDB:', err.message);
+    console.error(
+      'On Render: make sure MONGODB_URI is set in the dashboard, and that your ' +
+        'Atlas cluster allows connections from anywhere (IP Access List: 0.0.0.0/0).'
+    );
     process.exit(1);
   });
