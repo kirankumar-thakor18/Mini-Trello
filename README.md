@@ -139,7 +139,6 @@ mini-trello/
 │   ├── css/styles.css   # Styling + dark mode
 │   └── js/app.js        # Frontend logic + API calls
 ├── screenshots/         # App screenshots for the report
-├── scripts/             # Report generation helper
 ├── .env.example         # Environment template (no secrets)
 ├── render.yaml          # Render blueprint
 ├── package.json
