@@ -55,7 +55,7 @@ Work is organised by **state, not by list**: every task lives in exactly one of 
 - Layout adapts across **desktop, tablet, and mobile**.
 - Action buttons are reachable without drag & drop.
 - Clear focus and hover states, semantic buttons, and readable contrast in both themes.
-- **Lighthouse 11 (Chrome desktop, local build):** Performance **100** · Accessibility **100** · Best Practices **100** · SEO **100**. The audit drove dedicated on-soft text tokens for WCAG AA contrast, a meta description, and a valid `robots.txt`.
+- **Lighthouse 11 (Chrome desktop):** local build **100 · 100 · 100 · 100**; live demo **96 · 100 · 100 · 100** (Performance varies on Render's free tier). The audit drove dedicated on-soft text tokens for WCAG AA contrast, a meta description, and a valid `robots.txt`.
 
 ### 7. What I'd improve next
 - [ ] Add user research notes / usability test findings

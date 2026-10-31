@@ -150,7 +150,7 @@ Two things changed between sketch and build:
 - Priority is conveyed by **text label plus colour**, not colour alone.
 - The theme toggle **respects the system preference** (`prefers-color-scheme`) and remembers the user's choice in `localStorage`.
 - Hover and focus states are defined for buttons in both themes.
-- Audited with **Lighthouse 11** (Chrome desktop): **Performance 100, Accessibility 100, Best Practices 100, SEO 100**. The audit surfaced low-contrast status/priority text, so I added dedicated darker on-soft text tokens (WCAG AA), plus a meta description and a valid `robots.txt`.
+- Audited with **Lighthouse 11** (Chrome desktop): local build **100 / 100 / 100 / 100** (Performance / Accessibility / Best Practices / SEO); live on Render's free tier **96 / 100 / 100 / 100**, where Performance varies with network and cold starts. The audit surfaced low-contrast status/priority text, so I added dedicated darker on-soft text tokens (WCAG AA), plus a meta description and a valid `robots.txt`.
 
 ---
 
