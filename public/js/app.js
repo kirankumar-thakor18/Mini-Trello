@@ -45,6 +45,7 @@ const els = {
 
 let tasks = [];
 let editingId = null;
+let lastFocusedEl = null;
 let dragTaskId = null;
 let searchQuery = '';
 let statusFilter = 'all';
@@ -119,15 +120,19 @@ function cardTemplate(task) {
         }
       </div>
       <div class="card__actions">
-        <button class="btn btn--sm btn--ghost" data-action="prev" title="Move left" ${
-          hasPrev ? '' : 'disabled'
-        }>←</button>
-        <button class="btn btn--sm btn--ghost" data-action="next" title="Move right" ${
-          hasNext ? '' : 'disabled'
-        }>→</button>
-        <button class="btn btn--sm btn--ghost" data-action="edit" title="Edit task">✎</button>
+        <button class="btn btn--sm btn--ghost" data-action="prev" title="Move left" aria-label="Move &quot;${escapeAttr(
+          task.title
+        )}&quot; left" ${hasPrev ? '' : 'disabled'}>←</button>
+        <button class="btn btn--sm btn--ghost" data-action="next" title="Move right" aria-label="Move &quot;${escapeAttr(
+          task.title
+        )}&quot; right" ${hasNext ? '' : 'disabled'}>→</button>
+        <button class="btn btn--sm btn--ghost" data-action="edit" title="Edit task" aria-label="Edit &quot;${escapeAttr(
+          task.title
+        )}&quot;">✎</button>
         <span class="spacer"></span>
-        <button class="btn btn--sm btn--danger" data-action="delete" title="Delete task">🗑</button>
+        <button class="btn btn--sm btn--danger" data-action="delete" title="Delete task" aria-label="Delete &quot;${escapeAttr(
+          task.title
+        )}&quot;">🗑</button>
       </div>
     </div>
   `;
@@ -182,6 +187,7 @@ function render() {
   const pct = tasks.length ? Math.round((doneCount / tasks.length) * 100) : 0;
   els.progressFill.style.width = `${pct}%`;
   els.progressFill.textContent = `${pct}%`;
+  els.progressFill.parentElement.setAttribute('aria-valuenow', String(pct));
 
   els.stats.total.textContent = tasks.length;
   els.stats.todo.textContent = tasks.filter((t) => t.status === 'todo').length;
@@ -196,7 +202,16 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
+function escapeAttr(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
 function openModal(task = null) {
+  lastFocusedEl = document.activeElement;
   editingId = task ? String(task.id) : null;
   els.modalTitle.textContent = task ? 'Edit Task' : 'Create New Task';
   els.submitBtn.textContent = task ? 'Save Changes' : 'Add Task';
@@ -217,6 +232,10 @@ function closeModal() {
   els.modalOverlay.classList.remove('modal-overlay--show');
   setTimeout(() => {
     els.modalOverlay.hidden = true;
+    if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+      lastFocusedEl.focus();
+    }
+    lastFocusedEl = null;
   }, 200);
 }
 
@@ -391,7 +410,30 @@ els.modalOverlay.addEventListener('click', (e) => {
 els.taskForm.addEventListener('submit', handleSubmit);
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && !els.modalOverlay.hidden) closeModal();
+  if (els.modalOverlay.hidden) return;
+
+  if (e.key === 'Escape') {
+    closeModal();
+    return;
+  }
+
+  if (e.key !== 'Tab') return;
+
+  const focusable = els.modalOverlay.querySelectorAll(
+    'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+  );
+  if (!focusable.length) return;
+
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
 });
 
 /* ---------- Theme toggle ---------- */
@@ -401,6 +443,7 @@ const THEME_KEY = 'mini-trello-theme';
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   els.themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+  els.themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
 }
 
 (function initTheme() {

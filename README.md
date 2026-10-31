@@ -3,7 +3,7 @@
 **A modern, cloud-powered Kanban board** that makes it effortless to plan, track, and complete work.
 Create tasks, drag them across **To Do → In Progress → Done**, and keep everything visual — just like Trello, but built from scratch.
 
-Built as a live `Full-Stack Mini Project` with a real REST API and a cloud database.
+Designed and built as a live `Full-Stack Mini Project`, with a focus on clean interaction design, responsive layout, and a real REST API backed by a cloud database.
 
 ## 🚀 Live Demo
 
@@ -13,15 +13,57 @@ Built as a live `Full-Stack Mini Project` with a real REST API and a cloud datab
 
 ---
 
-## 🎯 At a Glance
+## 📌 Overview
 
-| What | Where |
-| ---- | ---- |
+| | |
+| --- | --- |
+| **Role** | UI/UX Design + Frontend Development |
+| **Type** | Solo full-stack mini project |
 | **Frontend** | HTML5 · CSS3 · Vanilla JavaScript |
 | **Backend** | Node.js · Express |
 | **Database** | MongoDB Atlas (cloud) |
-| **Hosted API** | Render (free tier) |
+| **Hosting** | Render (free tier) |
 | **Methodology** | Agile — 3 short sprints |
+
+---
+
+## 🎨 Design Process
+
+### 1. The problem
+Most task tools are either too heavy (Trello, Jira) or too simple (a plain to-do list). The goal was a **small, focused Kanban board** that a student or small team can understand in seconds — no onboarding, no clutter.
+
+### 2. Who it's for
+- Students managing project work across subjects
+- Small teams tracking a shared sprint
+- Anyone who wants a visual “what's next?” view without signing up for a complex tool
+
+### 3. Information architecture
+Work is organised by **state, not by list**: every task lives in exactly one of three columns — `To Do`, `In Progress`, `Done`. This makes the board scannable at a glance and reduces the mental model to a single question: *where is this task right now?*
+
+### 4. Interaction design
+- **Drag & drop** for the natural, direct way to move work forward.
+- **Quick move buttons (← / →)** on each card as an accessible, keyboard-friendly alternative to dragging.
+- **Modal form** for create/edit so the board never loses context.
+- **Immediate feedback** after every action — live column counts, a progress bar, and overdue highlighting.
+
+### 5. Visual design
+- **Priority colour coding** (Low / Medium / High) so urgency is readable before text.
+- **Dark / Light theme** with the user's preference saved.
+- **Consistent spacing and card hierarchy** so the eye moves title → meta → action.
+
+### 6. Responsive & accessible
+- Layout adapts across **desktop, tablet, and mobile**.
+- Action buttons are reachable without drag & drop.
+- Clear focus and hover states, semantic buttons, and readable contrast in both themes.
+- **Lighthouse 11 (Chrome desktop, local build):** Performance **100** · Accessibility **100** · Best Practices **100** · SEO **100**. The audit drove dedicated on-soft text tokens for WCAG AA contrast, a meta description, and a valid `robots.txt`.
+
+### 7. What I'd improve next
+- [ ] Add user research notes / usability test findings
+- [ ] Add empty states and onboarding hints
+- [ ] Add keyboard shortcuts (N = new task, / = search)
+- [ ] Publish the design file and annotate key decisions
+
+> **Design kit:** [importable SVGs + tokens](design/) &nbsp;·&nbsp; **Figma:** [`add your Figma link`](#) &nbsp;·&nbsp; **Case study:** [`CASE_STUDY.md`](CASE_STUDY.md)
 
 ---
 
@@ -175,7 +217,7 @@ The included `render.yaml` blueprint makes this a one-click setup.
 
 ---
 
-## 🧑‍🎓 Student
+## 🧑‍🎓 Author
 
 **Kirankumar Thakor** — *7th Semester, Mini Project*
 Enrollment No. **230390116028**

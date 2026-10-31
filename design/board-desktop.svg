@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="740" viewBox="0 0 1440 740" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0747a6" />
+      <stop offset="0.55" stop-color="#0052cc" />
+      <stop offset="1" stop-color="#0a66c2" />
+    </linearGradient>
+    <linearGradient id="progress" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00875a" />
+      <stop offset="1" stop-color="#36b37e" />
+    </linearGradient>
+    <linearGradient id="col-todo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fdecec" />
+      <stop offset="1" stop-color="#ffffff" />
+    </linearGradient>
+    <linearGradient id="col-progress" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fef4e4" />
+      <stop offset="1" stop-color="#ffffff" />
+    </linearGradient>
+    <linearGradient id="col-done" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e6f9ee" />
+      <stop offset="1" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Page background -->
+  <rect width="1440" height="740" fill="#f4f5f7" />
+
+  <!-- Header -->
+  <rect width="1440" height="66" fill="url(#header)" />
+  <rect x="24" y="14" width="38" height="38" rx="8" fill="#ffffff" fill-opacity="0.18" />
+  <path d="M43 22 L51 33 L43 44 L35 33 Z" fill="#ffffff" />
+  <text x="74" y="41" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Mini-Trello</text>
+
+  <rect x="1214" y="16" width="40" height="34" rx="8" fill="#ffffff" fill-opacity="0.15" />
+  <circle cx="1234" cy="33" r="7" fill="#ffffff" />
+  <circle cx="1237" cy="31" r="6" fill="#0052cc" />
+
+  <rect x="1266" y="16" width="150" height="34" rx="8" fill="#ffffff" />
+  <text x="1341" y="38" font-size="13" font-weight="600" fill="#0747a6" text-anchor="middle">+  Create New Task</text>
+
+  <!-- Progress -->
+  <rect y="66" width="1440" height="6" fill="#e4e6ea" />
+  <rect y="66" width="360" height="6" fill="url(#progress)" />
+
+  <!-- Toolbar -->
+  <rect x="24" y="88" width="420" height="40" rx="8" fill="#ffffff" stroke="#dfe1e6" stroke-width="1.5" />
+  <text x="40" y="113" font-size="14" fill="#5e6c84">Search tasks...</text>
+  <rect x="456" y="88" width="150" height="40" rx="8" fill="#ffffff" stroke="#dfe1e6" stroke-width="1.5" />
+  <text x="470" y="113" font-size="14" fill="#172b4d">All statuses</text>
+  <path d="M584 104 L590 110 L596 104" fill="none" stroke="#5e6c84" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Stats -->
+  <rect x="24" y="142" width="270" height="44" rx="10" fill="#ffffff" stroke="#dfe1e6" />
+  <circle cx="44" cy="164" r="4" fill="#172b4d" />
+  <text x="56" y="169" font-size="13" font-weight="600" fill="#172b4d">Total</text>
+  <text x="280" y="171" font-size="18" font-weight="800" fill="#172b4d" text-anchor="end">4</text>
+
+  <rect x="304" y="142" width="270" height="44" rx="10" fill="#fdecec" />
+  <circle cx="324" cy="164" r="4" fill="#ef4444" />
+  <text x="336" y="169" font-size="13" font-weight="600" fill="#b91c1c">To Do</text>
+  <text x="560" y="171" font-size="18" font-weight="800" fill="#b91c1c" text-anchor="end">2</text>
+
+  <rect x="584" y="142" width="270" height="44" rx="10" fill="#fef4e4" />
+  <circle cx="604" cy="164" r="4" fill="#f59e0b" />
+  <text x="616" y="169" font-size="13" font-weight="600" fill="#92400e">In Progress</text>
+  <text x="840" y="171" font-size="18" font-weight="800" fill="#92400e" text-anchor="end">1</text>
+
+  <rect x="864" y="142" width="270" height="44" rx="10" fill="#e6f9ee" />
+  <circle cx="884" cy="164" r="4" fill="#22c55e" />
+  <text x="896" y="169" font-size="13" font-weight="600" fill="#166534">Done</text>
+  <text x="1120" y="171" font-size="18" font-weight="800" fill="#166534" text-anchor="end">1</text>
+
+  <rect x="1144" y="142" width="270" height="44" rx="10" fill="#ffece5" />
+  <circle cx="1164" cy="164" r="4" fill="#bf2600" />
+  <text x="1176" y="169" font-size="13" font-weight="600" fill="#bf2600">Overdue</text>
+  <text x="1400" y="171" font-size="18" font-weight="800" fill="#bf2600" text-anchor="end">1</text>
+
+  <!-- ================= Column: To Do ================= -->
+  <rect x="24" y="210" width="450" height="480" rx="10" fill="#eef0f3" stroke="#dfe1e6" />
+  <rect x="36" y="222" width="426" height="34" rx="8" fill="url(#col-todo)" />
+  <circle cx="54" cy="239" r="5" fill="#ef4444" />
+  <text x="68" y="244" font-size="15" font-weight="700" fill="#172b4d">To Do</text>
+  <rect x="420" y="228" width="30" height="22" rx="11" fill="#fdecec" />
+  <text x="435" y="243" font-size="12" font-weight="700" fill="#b91c1c" text-anchor="middle">2</text>
+
+  <!-- Card 1 -->
+  <g>
+    <rect x="36" y="268" width="426" height="128" rx="8" fill="#ffffff" />
+    <line x1="40" y1="278" x2="40" y2="386" stroke="#ef4444" stroke-width="4" stroke-linecap="round" />
+    <text x="52" y="292" font-size="14" font-weight="600" fill="#172b4d">Design landing page UI</text>
+    <text x="52" y="312" font-size="13" fill="#5e6c84">Create the homepage mockup in Figma.</text>
+    <rect x="52" y="326" width="52" height="20" rx="10" fill="#ffece5" />
+    <text x="78" y="340" font-size="11" font-weight="700" fill="#bf2600" text-anchor="middle" letter-spacing="0.4">HIGH</text>
+    <rect x="110" y="326" width="62" height="20" rx="10" fill="#ffffff" stroke="#dfe1e6" />
+    <text x="141" y="340" font-size="11" font-weight="600" fill="#5e6c84" text-anchor="middle">Sep 15</text>
+    <rect x="52" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="66" y="377" font-size="13" fill="#c1c7d0" text-anchor="middle">&#8592;</text>
+    <rect x="86" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="100" y="377" font-size="13" fill="#5e6c84" text-anchor="middle">&#8594;</text>
+    <rect x="120" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="134" y="377" font-size="13" fill="#5e6c84" text-anchor="middle">&#9998;</text>
+    <rect x="422" y="360" width="28" height="24" rx="6" fill="#ffece5" />
+    <text x="436" y="378" font-size="15" fill="#bf2600" text-anchor="middle">&#215;</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g>
+    <rect x="36" y="408" width="426" height="128" rx="8" fill="#ffffff" />
+    <line x1="40" y1="418" x2="40" y2="526" stroke="#ef4444" stroke-width="4" stroke-linecap="round" />
+    <text x="52" y="432" font-size="14" font-weight="600" fill="#172b4d">Write project report</text>
+    <text x="52" y="452" font-size="13" fill="#5e6c84">Compile methodology and screenshots.</text>
+    <rect x="52" y="466" width="66" height="20" rx="10" fill="#fdecec" />
+    <text x="85" y="480" font-size="11" font-weight="700" fill="#b91c1c" text-anchor="middle" letter-spacing="0.4">MEDIUM</text>
+    <rect x="124" y="466" width="58" height="20" rx="10" fill="#ffffff" stroke="#dfe1e6" />
+    <text x="153" y="480" font-size="11" font-weight="600" fill="#5e6c84" text-anchor="middle">Oct 2</text>
+    <rect x="52" y="500" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="66" y="517" font-size="13" fill="#c1c7d0" text-anchor="middle">&#8592;</text>
+    <rect x="86" y="500" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="100" y="517" font-size="13" fill="#5e6c84" text-anchor="middle">&#8594;</text>
+    <rect x="120" y="500" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="134" y="517" font-size="13" fill="#5e6c84" text-anchor="middle">&#9998;</text>
+    <rect x="422" y="500" width="28" height="24" rx="6" fill="#ffece5" />
+    <text x="436" y="518" font-size="15" fill="#bf2600" text-anchor="middle">&#215;</text>
+  </g>
+
+  <!-- ================= Column: In Progress ================= -->
+  <rect x="494" y="210" width="450" height="480" rx="10" fill="#eef0f3" stroke="#dfe1e6" />
+  <rect x="506" y="222" width="426" height="34" rx="8" fill="url(#col-progress)" />
+  <circle cx="524" cy="239" r="5" fill="#f59e0b" />
+  <text x="538" y="244" font-size="15" font-weight="700" fill="#172b4d">In Progress</text>
+  <rect x="890" y="228" width="30" height="22" rx="11" fill="#fef4e4" />
+  <text x="905" y="243" font-size="12" font-weight="700" fill="#92400e" text-anchor="middle">1</text>
+
+  <!-- Card -->
+  <g>
+    <rect x="506" y="268" width="426" height="128" rx="8" fill="#ffffff" />
+    <line x1="510" y1="278" x2="510" y2="386" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" />
+    <text x="522" y="292" font-size="14" font-weight="600" fill="#172b4d">Build REST API</text>
+    <text x="522" y="312" font-size="13" fill="#5e6c84">Express routes for task actions.</text>
+    <rect x="522" y="326" width="52" height="20" rx="10" fill="#ffece5" />
+    <text x="548" y="340" font-size="11" font-weight="700" fill="#bf2600" text-anchor="middle" letter-spacing="0.4">HIGH</text>
+    <rect x="580" y="326" width="92" height="20" rx="10" fill="#ffece5" />
+    <text x="626" y="340" font-size="11" font-weight="600" fill="#bf2600" text-anchor="middle">Overdue: Oct 30</text>
+    <rect x="522" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="536" y="377" font-size="13" fill="#5e6c84" text-anchor="middle">&#8592;</text>
+    <rect x="556" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="570" y="377" font-size="13" fill="#5e6c84" text-anchor="middle">&#8594;</text>
+    <rect x="590" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="604" y="377" font-size="13" fill="#5e6c84" text-anchor="middle">&#9998;</text>
+    <rect x="892" y="360" width="28" height="24" rx="6" fill="#ffece5" />
+    <text x="906" y="378" font-size="15" fill="#bf2600" text-anchor="middle">&#215;</text>
+  </g>
+
+  <!-- ================= Column: Done ================= -->
+  <rect x="964" y="210" width="450" height="480" rx="10" fill="#eef0f3" stroke="#dfe1e6" />
+  <rect x="976" y="222" width="426" height="34" rx="8" fill="url(#col-done)" />
+  <circle cx="994" cy="239" r="5" fill="#22c55e" />
+  <text x="1008" y="244" font-size="15" font-weight="700" fill="#172b4d">Done</text>
+  <rect x="1360" y="228" width="30" height="22" rx="11" fill="#e6f9ee" />
+  <text x="1375" y="243" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">1</text>
+
+  <!-- Card -->
+  <g>
+    <rect x="976" y="268" width="426" height="128" rx="8" fill="#ffffff" />
+    <line x1="980" y1="278" x2="980" y2="386" stroke="#22c55e" stroke-width="4" stroke-linecap="round" />
+    <text x="992" y="292" font-size="14" font-weight="600" fill="#172b4d">Set up MongoDB Atlas</text>
+    <text x="992" y="312" font-size="13" fill="#5e6c84">Cloud cluster and connection string.</text>
+    <rect x="992" y="326" width="46" height="20" rx="10" fill="#fef4e4" />
+    <text x="1015" y="340" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle" letter-spacing="0.4">LOW</text>
+    <rect x="1044" y="326" width="58" height="20" rx="10" fill="#ffffff" stroke="#dfe1e6" />
+    <text x="1073" y="340" font-size="11" font-weight="600" fill="#5e6c84" text-anchor="middle">Sep 1</text>
+    <rect x="992" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="1006" y="377" font-size="13" fill="#5e6c84" text-anchor="middle">&#8592;</text>
+    <rect x="1026" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="1040" y="377" font-size="13" fill="#c1c7d0" text-anchor="middle">&#8594;</text>
+    <rect x="1060" y="360" width="28" height="24" rx="6" fill="#f0f2f5" />
+    <text x="1074" y="377" font-size="13" fill="#5e6c84" text-anchor="middle">&#9998;</text>
+    <rect x="1362" y="360" width="28" height="24" rx="6" fill="#ffece5" />
+    <text x="1376" y="378" font-size="15" fill="#bf2600" text-anchor="middle">&#215;</text>
+  </g>
+</svg>

@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="1500" fill="#f4f5f7" />
+
+  <!-- Title -->
+  <text x="60" y="72" font-size="28" font-weight="700" fill="#172b4d" letter-spacing="-0.5">Mini-Trello — Design System</text>
+  <text x="60" y="100" font-size="14" fill="#5e6c84">Tokens, typography, spacing and components used in the live product.</text>
+  <line x1="60" y1="122" x2="1140" y2="122" stroke="#dfe1e6" />
+
+  <!-- 01 Color -->
+  <text x="60" y="162" font-size="18" font-weight="700" fill="#172b4d">01 — Color</text>
+  <text x="60" y="190" font-size="13" font-weight="600" fill="#5e6c84">Light theme</text>
+
+  <!-- Row 1 -->
+  <g>
+    <rect x="60" y="205" width="110" height="64" rx="8" fill="#f4f5f7" stroke="#dfe1e6" />
+    <text x="60" y="285" font-size="11" font-weight="700" fill="#172b4d">bg</text>
+    <text x="60" y="299" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#f4f5f7</text>
+
+    <rect x="240" y="205" width="110" height="64" rx="8" fill="#ffffff" stroke="#dfe1e6" />
+    <text x="240" y="285" font-size="11" font-weight="700" fill="#172b4d">surface</text>
+    <text x="240" y="299" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#ffffff</text>
+
+    <rect x="420" y="205" width="110" height="64" rx="8" fill="#172b4d" />
+    <text x="420" y="285" font-size="11" font-weight="700" fill="#172b4d">text</text>
+    <text x="420" y="299" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#172b4d</text>
+
+    <rect x="600" y="205" width="110" height="64" rx="8" fill="#5e6c84" />
+    <text x="600" y="285" font-size="11" font-weight="700" fill="#172b4d">muted</text>
+    <text x="600" y="299" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#5e6c84</text>
+
+    <rect x="780" y="205" width="110" height="64" rx="8" fill="#dfe1e6" />
+    <text x="780" y="285" font-size="11" font-weight="700" fill="#172b4d">border</text>
+    <text x="780" y="299" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#dfe1e6</text>
+
+    <rect x="960" y="205" width="110" height="64" rx="8" fill="#0052cc" />
+    <text x="960" y="285" font-size="11" font-weight="700" fill="#172b4d">primary</text>
+    <text x="960" y="299" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#0052cc</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g>
+    <rect x="60" y="320" width="110" height="64" rx="8" fill="#0747a6" />
+    <text x="60" y="400" font-size="11" font-weight="700" fill="#172b4d">primary-hover</text>
+    <text x="60" y="414" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#0747a6</text>
+
+    <rect x="240" y="320" width="110" height="64" rx="8" fill="#deebff" />
+    <text x="240" y="400" font-size="11" font-weight="700" fill="#172b4d">primary-soft</text>
+    <text x="240" y="414" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#deebff</text>
+
+    <rect x="420" y="320" width="110" height="64" rx="8" fill="#00875a" />
+    <text x="420" y="400" font-size="11" font-weight="700" fill="#172b4d">success</text>
+    <text x="420" y="414" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#00875a</text>
+
+    <rect x="600" y="320" width="110" height="64" rx="8" fill="#ff991f" />
+    <text x="600" y="400" font-size="11" font-weight="700" fill="#172b4d">warn</text>
+    <text x="600" y="414" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#ff991f</text>
+
+    <rect x="780" y="320" width="110" height="64" rx="8" fill="#bf2600" />
+    <text x="780" y="400" font-size="11" font-weight="700" fill="#172b4d">danger</text>
+    <text x="780" y="414" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#bf2600</text>
+
+    <rect x="960" y="320" width="110" height="64" rx="8" fill="#ffece5" />
+    <text x="960" y="400" font-size="11" font-weight="700" fill="#172b4d">danger-soft</text>
+    <text x="960" y="414" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#ffece5</text>
+  </g>
+
+  <!-- Row 3: status -->
+  <g>
+    <rect x="60" y="435" width="110" height="64" rx="8" fill="#ef4444" />
+    <text x="60" y="515" font-size="11" font-weight="700" fill="#172b4d">todo</text>
+    <text x="60" y="529" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#ef4444</text>
+
+    <rect x="240" y="435" width="110" height="64" rx="8" fill="#fdecec" />
+    <text x="240" y="515" font-size="11" font-weight="700" fill="#172b4d">todo-soft</text>
+    <text x="240" y="529" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#fdecec</text>
+
+    <rect x="420" y="435" width="110" height="64" rx="8" fill="#f59e0b" />
+    <text x="420" y="515" font-size="11" font-weight="700" fill="#172b4d">in-progress</text>
+    <text x="420" y="529" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#f59e0b</text>
+
+    <rect x="600" y="435" width="110" height="64" rx="8" fill="#fef4e4" />
+    <text x="600" y="515" font-size="11" font-weight="700" fill="#172b4d">in-progress-soft</text>
+    <text x="600" y="529" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#fef4e4</text>
+
+    <rect x="780" y="435" width="110" height="64" rx="8" fill="#22c55e" />
+    <text x="780" y="515" font-size="11" font-weight="700" fill="#172b4d">done</text>
+    <text x="780" y="529" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#22c55e</text>
+
+    <rect x="960" y="435" width="110" height="64" rx="8" fill="#e6f9ee" />
+    <text x="960" y="515" font-size="11" font-weight="700" fill="#172b4d">done-soft</text>
+    <text x="960" y="529" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#e6f9ee</text>
+  </g>
+
+  <!-- Dark theme -->
+  <text x="60" y="580" font-size="13" font-weight="600" fill="#5e6c84">Dark theme</text>
+  <g>
+    <rect x="60" y="595" width="110" height="64" rx="8" fill="#101418" stroke="#2c333d" />
+    <text x="60" y="675" font-size="11" font-weight="700" fill="#172b4d">bg</text>
+    <text x="60" y="689" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#101418</text>
+
+    <rect x="240" y="595" width="110" height="64" rx="8" fill="#1e242b" stroke="#2c333d" />
+    <text x="240" y="675" font-size="11" font-weight="700" fill="#172b4d">surface</text>
+    <text x="240" y="689" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#1e242b</text>
+
+    <rect x="420" y="595" width="110" height="64" rx="8" fill="#e6e8ec" />
+    <text x="420" y="675" font-size="11" font-weight="700" fill="#172b4d">text</text>
+    <text x="420" y="689" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#e6e8ec</text>
+
+    <rect x="600" y="595" width="110" height="64" rx="8" fill="#2c333d" />
+    <text x="600" y="675" font-size="11" font-weight="700" fill="#172b4d">border</text>
+    <text x="600" y="689" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#2c333d</text>
+
+    <rect x="780" y="595" width="110" height="64" rx="8" fill="#4c8dff" />
+    <text x="780" y="675" font-size="11" font-weight="700" fill="#172b4d">primary</text>
+    <text x="780" y="689" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#4c8dff</text>
+
+    <rect x="960" y="595" width="110" height="64" rx="8" fill="#f87171" />
+    <text x="960" y="675" font-size="11" font-weight="700" fill="#172b4d">todo</text>
+    <text x="960" y="689" font-size="11" font-family="Consolas, monospace" fill="#5e6c84">#f87171</text>
+  </g>
+
+  <line x1="60" y1="720" x2="1140" y2="720" stroke="#dfe1e6" />
+
+  <!-- 02 Typography -->
+  <text x="60" y="760" font-size="18" font-weight="700" fill="#172b4d">02 — Typography</text>
+  <text x="60" y="785" font-size="12" fill="#5e6c84">Segoe UI, Roboto, Helvetica, Arial, sans-serif</text>
+
+  <text x="60" y="830" font-size="22" font-weight="700" fill="#172b4d" letter-spacing="-0.5">Mini-Trello</text>
+  <text x="1110" y="830" font-size="12" font-family="Consolas, monospace" fill="#5e6c84" text-anchor="end">22 / 700</text>
+
+  <text x="60" y="870" font-size="20" font-weight="700" fill="#172b4d">Create New Task</text>
+  <text x="1110" y="870" font-size="12" font-family="Consolas, monospace" fill="#5e6c84" text-anchor="end">20 / 700</text>
+
+  <text x="60" y="905" font-size="15" font-weight="700" fill="#172b4d">In Progress</text>
+  <text x="1110" y="905" font-size="12" font-family="Consolas, monospace" fill="#5e6c84" text-anchor="end">15 / 700</text>
+
+  <text x="60" y="940" font-size="14" font-weight="600" fill="#172b4d">Design landing page UI</text>
+  <text x="1110" y="940" font-size="12" font-family="Consolas, monospace" fill="#5e6c84" text-anchor="end">14 / 600</text>
+
+  <text x="60" y="972" font-size="13" fill="#5e6c84">Create the homepage mockup in Figma.</text>
+  <text x="1110" y="972" font-size="12" font-family="Consolas, monospace" fill="#5e6c84" text-anchor="end">13 / 400</text>
+
+  <text x="60" y="1004" font-size="11" font-weight="700" fill="#bf2600" letter-spacing="0.4">HIGH PRIORITY</text>
+  <text x="1110" y="1004" font-size="12" font-family="Consolas, monospace" fill="#5e6c84" text-anchor="end">11 / 700</text>
+
+  <line x1="60" y1="1030" x2="1140" y2="1030" stroke="#dfe1e6" />
+
+  <!-- 03 Spacing -->
+  <text x="60" y="1070" font-size="18" font-weight="700" fill="#172b4d">03 — Spacing</text>
+  <g font-size="12" font-family="Consolas, monospace" fill="#5e6c84">
+    <text x="60" y="1108">4</text><rect x="110" y="1096" width="24" height="14" rx="3" fill="#0052cc" fill-opacity="0.25" />
+    <text x="60" y="1138">8</text><rect x="110" y="1126" width="48" height="14" rx="3" fill="#0052cc" fill-opacity="0.25" />
+    <text x="60" y="1168">12</text><rect x="110" y="1156" width="72" height="14" rx="3" fill="#0052cc" fill-opacity="0.25" />
+    <text x="60" y="1198">16</text><rect x="110" y="1186" width="96" height="14" rx="3" fill="#0052cc" fill-opacity="0.25" />
+    <text x="60" y="1228">20</text><rect x="110" y="1216" width="120" height="14" rx="3" fill="#0052cc" fill-opacity="0.25" />
+    <text x="60" y="1258">24</text><rect x="110" y="1246" width="144" height="14" rx="3" fill="#0052cc" fill-opacity="0.25" />
+    <text x="60" y="1288">32</text><rect x="110" y="1276" width="192" height="14" rx="3" fill="#0052cc" fill-opacity="0.25" />
+  </g>
+
+  <!-- 04 Radius -->
+  <text x="620" y="1070" font-size="18" font-weight="700" fill="#172b4d">04 — Radius</text>
+  <g>
+    <rect x="620" y="1096" width="64" height="44" rx="6" fill="#deebff" stroke="#0052cc" />
+    <text x="620" y="1162" font-size="12" font-family="Consolas, monospace" fill="#5e6c84">6 · sm</text>
+    <rect x="720" y="1096" width="64" height="44" rx="8" fill="#deebff" stroke="#0052cc" />
+    <text x="720" y="1162" font-size="12" font-family="Consolas, monospace" fill="#5e6c84">8 · md</text>
+    <rect x="820" y="1096" width="64" height="44" rx="10" fill="#deebff" stroke="#0052cc" />
+    <text x="820" y="1162" font-size="12" font-family="Consolas, monospace" fill="#5e6c84">10 · lg</text>
+    <rect x="920" y="1096" width="64" height="44" rx="12" fill="#deebff" stroke="#0052cc" />
+    <text x="920" y="1162" font-size="12" font-family="Consolas, monospace" fill="#5e6c84">12 · xl</text>
+    <rect x="1020" y="1114" width="100" height="26" rx="13" fill="#deebff" stroke="#0052cc" />
+    <text x="1020" y="1162" font-size="12" font-family="Consolas, monospace" fill="#5e6c84">999 · pill</text>
+  </g>
+
+  <!-- 05 Components -->
+  <text x="620" y="1210" font-size="18" font-weight="700" fill="#172b4d">05 — Components</text>
+
+  <rect x="620" y="1232" width="150" height="40" rx="8" fill="#0052cc" />
+  <text x="695" y="1257" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Create New Task</text>
+
+  <rect x="784" y="1232" width="96" height="40" rx="8" fill="#f4f5f7" />
+  <text x="832" y="1257" font-size="14" font-weight="600" fill="#5e6c84" text-anchor="middle">Cancel</text>
+
+  <rect x="894" y="1232" width="96" height="40" rx="8" fill="#ffece5" />
+  <text x="942" y="1257" font-size="14" font-weight="600" fill="#bf2600" text-anchor="middle">Delete</text>
+
+  <rect x="620" y="1290" width="250" height="40" rx="8" fill="#ffffff" stroke="#dfe1e6" stroke-width="1.5" />
+  <text x="634" y="1315" font-size="14" fill="#5e6c84">Search tasks...</text>
+
+  <rect x="890" y="1298" width="52" height="20" rx="10" fill="#ffece5" />
+  <text x="916" y="1312" font-size="11" font-weight="700" fill="#bf2600" text-anchor="middle" letter-spacing="0.4">HIGH</text>
+  <rect x="950" y="1298" width="66" height="20" rx="10" fill="#fdecec" />
+  <text x="983" y="1312" font-size="11" font-weight="700" fill="#b91c1c" text-anchor="middle" letter-spacing="0.4">MEDIUM</text>
+  <rect x="1024" y="1298" width="46" height="20" rx="10" fill="#fef4e4" />
+  <text x="1047" y="1312" font-size="11" font-weight="700" fill="#92400e" text-anchor="middle" letter-spacing="0.4">LOW</text>
+
+  <!-- Card sample -->
+  <rect x="620" y="1350" width="300" height="130" rx="8" fill="#ffffff" />
+  <line x1="624" y1="1362" x2="624" y2="1468" stroke="#ef4444" stroke-width="4" stroke-linecap="round" />
+  <text x="638" y="1376" font-size="14" font-weight="600" fill="#172b4d">Design landing page UI</text>
+  <text x="638" y="1396" font-size="13" fill="#5e6c84">Create the homepage mockup in Figma.</text>
+  <rect x="638" y="1410" width="52" height="20" rx="10" fill="#ffece5" />
+  <text x="664" y="1424" font-size="11" font-weight="700" fill="#bf2600" text-anchor="middle" letter-spacing="0.4">HIGH</text>
+  <rect x="696" y="1410" width="62" height="20" rx="10" fill="#ffffff" stroke="#dfe1e6" />
+  <text x="727" y="1424" font-size="11" font-weight="600" fill="#5e6c84" text-anchor="middle">Sep 15</text>
+  <rect x="638" y="1440" width="28" height="24" rx="6" fill="#f0f2f5" />
+  <text x="652" y="1457" font-size="13" fill="#c1c7d0" text-anchor="middle">&#8592;</text>
+  <rect x="672" y="1440" width="28" height="24" rx="6" fill="#f0f2f5" />
+  <text x="686" y="1457" font-size="13" fill="#5e6c84" text-anchor="middle">&#8594;</text>
+  <rect x="706" y="1440" width="28" height="24" rx="6" fill="#f0f2f5" />
+  <text x="720" y="1457" font-size="13" fill="#5e6c84" text-anchor="middle">&#9998;</text>
+  <rect x="876" y="1440" width="28" height="24" rx="6" fill="#ffece5" />
+  <text x="890" y="1458" font-size="15" fill="#bf2600" text-anchor="middle">&#215;</text>
+
+  <!-- Status pills -->
+  <rect x="950" y="1350" width="70" height="24" rx="12" fill="#fdecec" />
+  <circle cx="966" cy="1362" r="4" fill="#ef4444" />
+  <text x="976" y="1366" font-size="11" font-weight="700" fill="#b91c1c">To Do</text>
+
+  <rect x="950" y="1384" width="110" height="24" rx="12" fill="#fef4e4" />
+  <circle cx="966" cy="1396" r="4" fill="#f59e0b" />
+  <text x="976" y="1400" font-size="11" font-weight="700" fill="#92400e">In Progress</text>
+
+  <rect x="950" y="1418" width="70" height="24" rx="12" fill="#e6f9ee" />
+  <circle cx="966" cy="1430" r="4" fill="#22c55e" />
+  <text x="976" y="1434" font-size="11" font-weight="700" fill="#166534">Done</text>
+</svg>

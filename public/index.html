@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mini-Trello</title>
-  <link rel="stylesheet" href="css/styles.css?v=5" />
+  <title>Mini-Trello — Lightweight Kanban Board</title>
+  <meta name="description" content="Mini-Trello is a lightweight Kanban board with task creation, status tracking, search, filters, dark mode, and keyboard-friendly accessibility." />
+  <link rel="stylesheet" href="css/styles.css?v=7" />
 </head>
 <body>
+  <a class="skip-link" href="#board">Skip to board</a>
   <header class="header">
     <div class="header__brand">
       <span class="header__logo">◈</span>
       <h1 class="header__title">Mini-Trello</h1>
     </div>
     <div class="header__actions">
-      <button id="theme-toggle" class="btn theme-toggle" title="Toggle dark mode">🌙</button>
-      <button id="open-create-modal" class="btn btn--primary">
+      <button type="button" id="theme-toggle" class="btn theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" aria-pressed="false">🌙</button>
+      <button type="button" id="open-create-modal" class="btn btn--primary">
         <span class="btn__icon">+</span> Create New Task
       </button>
     </div>
   </header>
 
-  <div class="progress-track">
+  <div class="progress-track" role="progressbar" aria-label="Task completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="progress-fill" id="progress-fill">0%</div>
   </div>
 
@@ -30,6 +32,7 @@
       id="search-input"
       class="toolbar__search"
       placeholder="🔍 Search tasks..."
+      aria-label="Search tasks"
       autocomplete="off"
     />
     <select id="filter-status" class="toolbar__filter" aria-label="Filter by status">
@@ -63,7 +66,7 @@
     </div>
   </div>
 
-  <main class="board" id="board">
+  <main class="board" id="board" tabindex="-1">
     <section class="column" data-status="todo">
       <header class="column__header column__header--todo">
         <h2 class="column__title">To Do</h2>
@@ -87,7 +90,7 @@
     </section>
   </main>
 
-  <div class="conn-banner" id="conn-banner" hidden>
+  <div class="conn-banner" id="conn-banner" role="alert" hidden>
     <span class="conn-banner__msg">⚠️ Server not reachable. Tasks will not be saved unless the server is running.</span>
     <span class="conn-banner__hint">Run <code>npm start</code> inside the Mini-Trello folder, then open
       <b>http://localhost:3000</b>. Do not double-click index.html.</span>
@@ -95,7 +98,7 @@
   </div>
 
   <div class="modal-overlay" id="modal-overlay" hidden>
-    <div class="modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <h2 class="modal__title" id="modal-title">Create New Task</h2>
       <form id="task-form">
         <label class="modal__label" for="task-title">Title *</label>
@@ -138,8 +141,8 @@
     </div>
   </div>
 
-  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+  <div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
 
-  <script src="js/app.js?v=5"></script>
+  <script src="js/app.js?v=7"></script>
 </body>
 </html>
