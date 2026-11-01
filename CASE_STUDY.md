@@ -95,7 +95,7 @@ To Do  →  In Progress  →  Done
 
 This reduces the mental model to a single question: *where is this task right now?* Column counts and a progress bar surface the overall picture without opening anything.
 
-> **Design files:** [Figma-ready kit](design/README.md) &nbsp;·&nbsp; Figma file: [`add your link`](#) — or embed an IA / flow diagram here.
+> **Design files:** [Figma-ready kit](design/README.md) &nbsp;·&nbsp; Figma file: [Mini-Trello UI Kit](https://www.figma.com/design/Xf2QNKopm5ljsjgFdMW4ze/Mini-Trello--UI-Kit?node-id=1-7203&t=ZC8xKTCztK2FKApB-1) — or embed an IA / flow diagram here.
 
 ---
 
