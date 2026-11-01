@@ -61,7 +61,7 @@ Work is organised by **state, not by list**: every task lives in exactly one of 
 - [ ] Add user research notes / usability test findings
 - [ ] Add empty states and onboarding hints
 - [ ] Add keyboard shortcuts (N = new task, / = search)
-- [ ] Publish the design file and annotate key decisions
+- [x] Publish the Figma design file (UI kit + 4 screens)
 
 > **Design kit:** [importable SVGs + tokens](design/) &nbsp;·&nbsp; **Figma:** [Mini-Trello UI Kit](https://www.figma.com/design/Xf2QNKopm5ljsjgFdMW4ze/Mini-Trello--UI-Kit?node-id=1-7034&t=ZC8xKTCztK2FKApB-1) &nbsp;·&nbsp; **Case study:** [`CASE_STUDY.md`](CASE_STUDY.md)
 

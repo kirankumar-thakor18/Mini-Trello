@@ -201,7 +201,7 @@ Tested through self-testing on desktop and mobile, plus feedback from peers duri
 - [ ] Add keyboard shortcuts (N = new task, / = search)
 - [ ] Add per-task activity/history
 - [ ] Explore swimlanes or due-date grouping for larger boards
-- [ ] Publish an annotated Figma file
+- [x] Publish the Figma UI kit (tokens + 4 screens)
 
 ---
 

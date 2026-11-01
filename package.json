@@ -13,7 +13,7 @@
     "express",
     "mongodb"
   ],
-  "author": "7IT Students",
+  "author": "Kirankumar Thakor",
   "license": "MIT",
   "engines": {
     "node": ">=22.5.0"

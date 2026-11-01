@@ -41,10 +41,10 @@ On the style guide frame, add short notes on the key decisions (three columns, p
 
 ### 6. Share it
 - **Share → Anyone with the link → Can view → Copy link.**
-- Paste the link into:
-  - `README.md` (the `Figma` placeholder)
+- The link is already added to:
+  - `README.md` (the **Figma** link)
   - `CASE_STUDY.md` (the "Design files" line)
-  - Your resume's Mini-Trello project line
+  - The resume's Mini-Trello project line
 
 ## Notes
 
